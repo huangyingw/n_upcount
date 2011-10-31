@@ -1,2 +1,2 @@
 make -B \
-&& ./nextPerfectSquare.exe
+&& ./n_upcount.exe

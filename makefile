@@ -1,5 +1,5 @@
-OBJECTS = nextPerfectSquare.exe
-LOCFLAGS = -I../nextPerfectSquare
+OBJECTS = n_upcount.exe
+LOCFLAGS = -I../n_upcount
 CC = g++
 CCFLAGS = -ansi -W -Wall -lstdc++
 LOCFLAGS =
