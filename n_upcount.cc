@@ -6,7 +6,19 @@ using namespace std;
 
 int nUpCount(int a[ ], int len, int n)
 {
-  return 0;
+  int  partial_sum=0, result=0;
+  for (int i=0;i<len;i++)
+  {
+    if ( partial_sum <= n)
+    {
+      partial_sum+=a[i];
+      if (partial_sum > n)
+        result++;
+    }
+    else
+      partial_sum+=a[i];
+  }
+  return result;
 }
 int main() 
 {
