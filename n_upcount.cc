@@ -31,9 +31,9 @@ int main()
   int c[]={1, 2, -1, 5, 3, 2, -3};//0
   cout<<nUpCount(c,sizeof(c)/sizeof(int),20)<<endl;
   /*
-   3
-   1
-   0
-   */
+     3
+     1
+     0
+     */
   return 0;
 }
