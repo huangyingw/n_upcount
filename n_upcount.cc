@@ -9,14 +9,9 @@ int nUpCount(int a[ ], int len, int n)
   int  partial_sum=0, result=0;
   for (int i=0;i<len;i++)
   {
-    if ( partial_sum <= n)
-    {
-      partial_sum+=a[i];
-      if (partial_sum > n)
-        result++;
-    }
-    else
-      partial_sum+=a[i];
+    if ( partial_sum <= n && partial_sum+a[i] > n)
+      result++;
+    partial_sum+=a[i];
   }
   return result;
 }
